@@ -14,6 +14,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    flex-direction: column;
 }
 
 #container {
@@ -171,6 +172,7 @@ body {
     #temp {
         padding: 14px;
     }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -196,4 +198,54 @@ body {
     #temp {
         padding: 14px;
     }
+}
+
+body {
+    transition: background 0.5s;
+}
+
+body.clear-day {
+    background: url(../images/clear-day.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.clear-night {
+    background: url(../images/clear-night.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.rain-day {
+    background: url(../images/rain-day.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.rain-night {
+    background: url(../images/rain-night.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+body.clouds-day {
+    background: url(../images/clouds-day.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.clouds-night {
+    background: url(../images/clouds-night.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+audio {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8); /* Adiciona um fundo semi-transparente */
+    border-radius: 5px;
+    padding: 5px;
+   
+}
+
+.hide-audio {
+    display: none;
 }
