@@ -79,17 +79,17 @@ function changeBackground (condition, isDaytime) {
     switch (condition) {
             case 'clear':
             body.classList.add(`clear${timeSuffix}`)
-            audioSource.src = 'src/audio/silva.mp3'
+            audioSource.src = 'silva.mp3'
             break
 
             case 'rain':
             body.classList.add(`rain${timeSuffix}`)
-            audioSource.src = 'src/audio/chuva.mp3'
+            audioSource.src = 'chuva.mp3'
             break
 
             case 'clouds':
             body.classList.add(`clouds${timeSuffix}`)
-            audioSource.src = 'src/audio/anavi.mp3'
+            audioSource.src = 'anavi.mp3'
             break
 
             case 'snow':
